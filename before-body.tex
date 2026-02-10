@@ -14,6 +14,11 @@ $endif$
 \vspace{10ex}
 $for(by-author)$
 {\Large\bfseries $by-author.name.literal$ \par}
+$if(by-author.degrees)$
+{\large $for(by-author.degrees)$$it$$sep$, $endfor$ \par}
+$endif$
+
+
 $if(by-author.orcid)$
 {\large ORCID: $by-author.orcid$ \par}
 $endif$

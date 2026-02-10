@@ -12,14 +12,17 @@ bibliography: thesis.bib
 csl: chicago-author-date-with-ibid.csl
   
 book:
-  title: "The inside of a ping-pong ball"
-  # output-file: My_thesis.pdf
-  subtitle: "It's shiny and bright"
+  title: "Antibiotic augmentation of allograft bone"
+  output-file: thesis_Day_2026.pdf
+  # subtitle: "It's shiny and bright"
   description: |
     Thesis of a postgraduate research project being conducted at the University of Edinburgh under the supervision of [Professor Kermit T. Frog](https://www.ed.ac.uk/profile/kermit) and [Dr. G. O'Nzo](https://www.ed.ac.uk/profile/gonzo). 
   author: 
-    name: "Random Student"
-    affiliation: University of Edinburgh
+    name: "Robert Edward Day"
+    affiliation: University of Western Australia
+    degrees:
+    - BMech Eng
+    - MBiomed Eng
     # orcid: 0000-0000-0000-0000
   date: today
 
