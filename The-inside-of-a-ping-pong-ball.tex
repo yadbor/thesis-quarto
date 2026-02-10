@@ -44,28 +44,14 @@
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \setcounter{secnumdepth}{2}
 % Make \paragraph and \subparagraph free-standing
-\makeatletter
 \ifx\paragraph\undefined\else
   \let\oldparagraph\paragraph
-  \renewcommand{\paragraph}{
-    \@ifstar
-      \xxxParagraphStar
-      \xxxParagraphNoStar
-  }
-  \newcommand{\xxxParagraphStar}[1]{\oldparagraph*{#1}\mbox{}}
-  \newcommand{\xxxParagraphNoStar}[1]{\oldparagraph{#1}\mbox{}}
+  \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
 \fi
 \ifx\subparagraph\undefined\else
   \let\oldsubparagraph\subparagraph
-  \renewcommand{\subparagraph}{
-    \@ifstar
-      \xxxSubParagraphStar
-      \xxxSubParagraphNoStar
-  }
-  \newcommand{\xxxSubParagraphStar}[1]{\oldsubparagraph*{#1}\mbox{}}
-  \newcommand{\xxxSubParagraphNoStar}[1]{\oldsubparagraph{#1}\mbox{}}
+  \renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
 \fi
-\makeatother
 
 
 \providecommand{\tightlist}{%
@@ -207,7 +193,6 @@
 \@ifpackageloaded{caption}{}{\usepackage{caption}}
 \@ifpackageloaded{subcaption}{}{\usepackage{subcaption}}
 \makeatother
-
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -221,7 +206,6 @@
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
-
 \title{The inside of a ping-pong ball}
 \usepackage{etoolbox}
 \makeatletter
@@ -231,7 +215,7 @@
 \makeatother
 \subtitle{It's shiny and bright}
 \author{Random Student}
-\date{11th February 2025}
+\date{11th February 2026}
 
 \begin{document}
 \frontmatter
@@ -247,7 +231,7 @@
 \vskip 0cm plus 2fill
 {\bfseries\large Doctor of Philosophy \par}
 \vspace{3ex}
-{\bfseries\large 11th February 2025 \par}
+{\bfseries\large 11th February 2026 \par}
 \vspace{5ex}
 
 \centering%
@@ -280,8 +264,7 @@
 \renewcommand*\contentsname{Table of contents}
 \setcounter{tocdepth}{2}
 \renewcommand*\listfigurename{List of figures}
-\renewcommand*\listtablename{List of tables}
-\setstretch{1.25}
+\renewcommand*\listtablename{List of tables}\setstretch{1.25}
 \mainmatter
 \bookmarksetup{startatroot}
 
@@ -393,6 +376,5 @@ the Lowly}. Boston, MA: John P. Jewett; Company.
 
 
 \backmatter
-
 
 \end{document}
