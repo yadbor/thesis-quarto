@@ -12,3 +12,27 @@ to Piglet. I would never have been on this journey without you.
 
 To Eeyore, Pooh, Christopher Robin and Piglet, for friendship and encouragement. To all of these, my gratitude.
 
+# THESIS DECLARATION {-}
+
+I, {{< meta author >}}, certify that:
+
+This thesis has been substantially accomplished during enrolment in this degree.
+This thesis is my own work and does not contain any material previously published or written by another person, except where due reference has been made in the text or Authorship Declaration.
+This thesis does not contain material which has been submitted for the award of any other degree or diploma in my name, in any university or other tertiary institution.
+In the future, no part of this thesis will be used in a submission in my name, for any other degree or diploma in any university or other tertiary institution without the prior approval of The University of Western Australia and where applicable, any partner institution responsible for the joint-award of this degree.
+This thesis does not violate or infringe any copyright, trademark, patent, or other rights whatsoever of any person.
+The research involving human data reported in this thesis was assessed and approved by The University of Western Australia Human Research Ethics Committee. Approval #: [insert approval number(s)]. Written patient consent has been received and archived for the research involving patient data reported in this thesis.
+The research involving animal data reported in this thesis was assessed and approved by The University of Western Australia Animal Ethics Committee. Approval #: [insert approval number(s)]. The research involving animals reported in this thesis followed The University of Western Australia and national standards for the care and use of laboratory animals.
+The following approvals were obtained prior to commencing the relevant work described in this thesis: [List approvals here].
+Third party editorial assistance was provided in preparation of this thesis by [insert name/company].
+
+
+
+Signature: [Sign here]
+Date: [Insert date here]
+ 
+ACKNOWLEDGEMENTS
+
+This research was supported by an Australian Government Research Training Program (RTP) Scholarship.
+This research was funded by [insert name of grant and grant identification numbers].
+Technical assistance was kindly provided by [insert name of assistant(s)] for [insert description of assistance] that is described in [insert location in thesis].
