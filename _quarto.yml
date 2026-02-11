@@ -7,18 +7,10 @@ project:
 date: today
 date-modified: last-modified
 date-format: "Do MMMM YYYY"  
-bibliography: thesis.bib
-# csl: /path/to/your/style-file.csl
-csl: chicago-author-date-with-ibid.csl
-
-degreetype: Doctor of Philosophy
-submitted: 2026
-
-#discipline: Biomedcial Engineering
 
 book:
   title: "Antibiotic augmentation of allograft bone"
-  # subtitle: "ample alliteration always assists assimilation"
+  # subtitle: "ample alliteration always assists accurate apprehension"
   output-file: thesis_Day_2026
   description: |
     Thesis of a postgraduate research project being conducted at the University of Western Australia under the supervision of [Professor Kermit T. Frog](https://www.ed.ac.uk/profile/kermit) and [Dr. G. O'Nzo](https://www.ed.ac.uk/profile/gonzo). 
@@ -29,10 +21,9 @@ book:
         department: School of Medicine
         group: Biomedical Engineering
     degrees:
-    - BMech Eng
-    - MBiomed Eng
-    # orcid: 0000-0000-0000-0000
-  date: today
+    - BMechEng (SAIT)
+    - MBiomedEng (UNSW)
+    orcid: 0000-0003-3442-2298
 
   chapters:
     # -------------------------------------------------------------------
@@ -42,7 +33,8 @@ book:
     # and finally appendices.
     # -------------------------------------------------------------------
     - index.qmd # contains the (placeholder) abstract and the _preface.qmd
-    # declaration, dedication, acknowledgements in _front-matter.qmd, to be included from index.qmd
+    # declaration, dedication, and acknowledgements in _front-matter.qmd, 
+    # to be included from index.qmd
     # table of contents (and lists of tables and figures) included in index.qmd
     - 10-introduction.qmd
     - 20-conceptual-framework.qmd
@@ -58,6 +50,15 @@ book:
     collapse-level: 2
   page-footer: 
     left: "What a lovely day." 
+
+bibliography: thesis.bib
+# csl: /path/to/your/style-file.csl
+csl: chicago-author-date-with-ibid.csl
+
+degreetype: Doctor of Philosophy
+submitted: 2026
+school: School of Medicine
+discipline: Biomedical Engineering
 
 format:
   html:

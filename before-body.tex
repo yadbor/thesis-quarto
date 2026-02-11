@@ -4,7 +4,7 @@ $endif$
 $if(title)$
 \cleardoublepage
 \thispagestyle{empty}
-{\centering
+\centering
 \hbox{}\vskip 0cm plus 1fill
 {\Huge\bfseries $title$ \par}
 $if(subtitle)$
@@ -13,42 +13,38 @@ $if(subtitle)$
 $endif$
 \vspace{10ex}
 
+$for(by-author)$
 {\Large\bfseries $by-author.name.literal$ \par}
 $if(by-author.degrees)$
 {\large $for(by-author.degrees)$$it$$sep$, $endfor$ \par}
 $endif$
-% $if(by-author.orcid)$
-% {\large ORCID: $by-author.orcid$ \par}
-% $endif$
-\vskip 0cm plus 2fill
-% {\bfseries\large Doctor of Philosophy \par}
-
-\centering%
-\vspace{10ex}
-\includegraphics[width=4cm]{EdUniCrest.eps}\par%
-\vspace{5ex}
-
-% $if(by-affiliation)$
-% {\large $for(by-affiliation.department)$$it$$sep$, $endfor$ \par}
-% $endif$
-
-
-$for(by-affiliation)$
-$if(it.department)$
-{\bfseries\large $it.department$ \par}
-\vspace{3ex}
-$endif$%
-{\bfseries\large $it.group$ \par}
+$if(by-author.orcid)$
+{\small ORCID: $by-author.orcid$ \par}
+$endif$
 $endfor$
-}
 
+\vskip 0cm plus 2fill
+
+%\centering
+%\vspace{5cm}
+\includegraphics[width=2.5cm]{uwacrest-blue-vertical.no-raster.eps}\par
+
+\begin{adjustwidth}{1cm}{1cm}
 \centering
-\vspace{3ex}
-{\bfseries\large $submitted$ \par}
-\vspace{5ex}
-
-\vspace{10ex}
 {\small This thesis is presented for the degree of $degreetype$ of The University of Western Australia. \par}
+\end{adjustwidth}
+
+\vspace{5ex}
+$if(school)$
+{\bfseries\large $school$ \par}
+$endif$
+$if(discipline)$
+{\bfseries\large $discipline$ \par}
+$endif$
+
+\vspace{3ex}
+{\bfseries\Large $submitted$ \par}
+
 
 \newpage
 
@@ -66,15 +62,15 @@ $endfor$
 % $endif$
 % \vspace{10ex}
 
-$if(examiner)$
-{\small\bfseries Examiners: \par}
-$for(examiner)$
-{\small $examiner.name$, $examiner.affiliation$}\par
-$endfor$
-$endif$
+% $if(examiner)$
+% {\small\bfseries Examiners: \par}
+% $for(examiner)$
+% {\small $examiner.name$, $examiner.affiliation$}\par
+% $endfor$
+% $endif$
 
 
-$endif$
+%$endif$
 
 % We're not ready for the main matter yet, so save it for later
 \let\mainmatterreal\mainmatter
