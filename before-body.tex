@@ -12,34 +12,44 @@ $if(subtitle)$
 {\large\bfseries $subtitle$ \par}
 $endif$
 \vspace{10ex}
-$for(by-author)$
+
 {\Large\bfseries $by-author.name.literal$ \par}
 $if(by-author.degrees)$
 {\large $for(by-author.degrees)$$it$$sep$, $endfor$ \par}
 $endif$
-
-
-$if(by-author.orcid)$
-{\large ORCID: $by-author.orcid$ \par}
-$endif$
+% $if(by-author.orcid)$
+% {\large ORCID: $by-author.orcid$ \par}
+% $endif$
 \vskip 0cm plus 2fill
-{\bfseries\large Doctor of Philosophy \par}
-\vspace{3ex}
-{\bfseries\large $date$ \par}
-\vspace{5ex}
+% {\bfseries\large Doctor of Philosophy \par}
 
 \centering%
-\includegraphics[width=2in]{EdUniCrest.eps}\par%
+\vspace{10ex}
+\includegraphics[width=4cm]{EdUniCrest.eps}\par%
 \vspace{5ex}
 
-$for(by-author.affiliations)$%
-$if(it.department)$%
+% $if(by-affiliation)$
+% {\large $for(by-affiliation.department)$$it$$sep$, $endfor$ \par}
+% $endif$
+
+
+$for(by-affiliation)$
+$if(it.department)$
 {\bfseries\large $it.department$ \par}
 \vspace{3ex}
 $endif$%
-{\bfseries\large $it.name$ \par}
-$endfor$$endfor$%
+{\bfseries\large $it.group$ \par}
+$endfor$
 }
+
+\centering
+\vspace{3ex}
+{\bfseries\large $submitted$ \par}
+\vspace{5ex}
+
+\vspace{10ex}
+{\small This thesis is presented for the degree of $degreetype$ of The University of Western Australia. \par}
+
 \newpage
 
 \null
@@ -48,13 +58,13 @@ $endfor$$endfor$%
 \flushleft
 
 
-$if(supervisor)$
-{\small\bfseries Supervisors: \par}
-$for(supervisor)$
-{\small $supervisor.name$, $supervisor.affiliation$}\par
-$endfor$
-$endif$
-\vspace{10ex}
+% $if(supervisor)$
+% {\small\bfseries Supervisors: \par}
+% $for(supervisor)$
+% {\small $supervisor.name$, $supervisor.affiliation$}\par
+% $endfor$
+% $endif$
+% \vspace{10ex}
 
 $if(examiner)$
 {\small\bfseries Examiners: \par}
@@ -63,8 +73,6 @@ $for(examiner)$
 $endfor$
 $endif$
 
-\vspace{10ex}
-{\small Thesis submitted in accordance with the requirements of the degree of Doctor of Philosophy. \par}
 
 $endif$
 

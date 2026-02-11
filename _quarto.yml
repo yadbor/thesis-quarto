@@ -10,16 +10,24 @@ date-format: "Do MMMM YYYY"
 bibliography: thesis.bib
 # csl: /path/to/your/style-file.csl
 csl: chicago-author-date-with-ibid.csl
-  
+
+degreetype: Doctor of Philosophy
+submitted: 2026
+
+#discipline: Biomedcial Engineering
+
 book:
   title: "Antibiotic augmentation of allograft bone"
-  output-file: thesis_Day_2026.pdf
-  # subtitle: "It's shiny and bright"
+  # subtitle: "ample alliteration always assists assimilation"
+  output-file: thesis_Day_2026
   description: |
-    Thesis of a postgraduate research project being conducted at the University of Edinburgh under the supervision of [Professor Kermit T. Frog](https://www.ed.ac.uk/profile/kermit) and [Dr. G. O'Nzo](https://www.ed.ac.uk/profile/gonzo). 
+    Thesis of a postgraduate research project being conducted at the University of Western Australia under the supervision of [Professor Kermit T. Frog](https://www.ed.ac.uk/profile/kermit) and [Dr. G. O'Nzo](https://www.ed.ac.uk/profile/gonzo). 
   author: 
     name: "Robert Edward Day"
-    affiliation: University of Western Australia
+    affiliations:
+      - name: University of Western Australia
+        department: School of Medicine
+        group: Biomedical Engineering
     degrees:
     - BMech Eng
     - MBiomed Eng
@@ -43,6 +51,7 @@ book:
     - 50-conclusion.qmd
     - references.qmd
   # appendices: 
+  # 
   sidebar:
     contents: auto
     style: docked
