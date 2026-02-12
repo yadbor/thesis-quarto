@@ -1,6 +1,6 @@
 project:
   type: book
-  output-dir: docs
+  output-dir: docs # needed for GitHub to read the HTML site correctly
   preview:
     port: 4321
 
@@ -55,7 +55,7 @@ bibliography: thesis.bib
 # csl: /path/to/your/style-file.csl
 csl: chicago-author-date-with-ibid.csl
 
-# Details to be added to the title page
+# Details to be added to the title page. Comment out any that you don't use.
 degreetype: Doctor of Philosophy
 submitted: 2026
 school: School of Medicine
@@ -77,18 +77,21 @@ format:
     number-depth: 2
 
   pdf: 
-    documentclass: scrbook
+    # See https://www.uwa.edu.au/uniprint/guides/preparing-your-thesis-for-print
+    documentclass: scrbook # Two-sided output. Use scrreprt for single-sided.
     keep-tex: true
     papersize: a4
     include-in-header: include-in-header.tex
     template-partials: 
       - before-body.tex
       - toc.tex
-    geometry:
-      - inner=3cm
-      - outer=4cm
-      - top=3cm
-      - bottom=4cm
+    geometry: 
+      # Use the geometry packge. Fine control of KOMA with include-in-header.tex
+      # UWA Standard for binding is 4cm inner margin and 2cm on other sides.
+      - inner=4cm
+      - outer=3cm
+      - top=2.5cm
+      - bottom=3.5cm
       - headsep=22pt
       - headheight=11pt
       - footskip=33pt
@@ -96,27 +99,17 @@ format:
       - ignorefoot
       - heightrounded
     toc: true
-    toc-depth: 3
+    toc-depth: 3 # Will show up to ### headings
+    toc-title: "Table of Contents"
     number-sections: true
-    number-depth: 2
-    lof: true
-    lot: true
+    number-depth: 2 # Counts differently to toc-depth, so this is also up to ###
+    lof: true # List of Figures
+    lot: true # List of Tables
 
-    # supervisor: 
-    #   - name: "Professor Kermit T. Frog"
-    #     affiliation: University of Edinburgh
-    #   - name: "Dr. G. O'Nzo"
-    #     affiliation: University of Edinburgh
-    # examiner: 
-    #   - name: "TBD"
-    #     affiliation: TBD
-    #   - name: "TBD"
-    #     affiliation: TBD
-
-    indent: false
-    linestretch: 1.25
+    indent: false # Use paragraph indent?
+    linestretch: 1.25 # Extra spacing between lines
     fontsize: 12pt
-    pdf-engine: xelatex
+    pdf-engine: xelatex # If you are using xelatex...
     # You can use any font installed on your computer.
     # mainfont: "Georgia"
     # sansfont: "Optima"
