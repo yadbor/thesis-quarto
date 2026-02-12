@@ -55,6 +55,7 @@ bibliography: thesis.bib
 # csl: /path/to/your/style-file.csl
 csl: chicago-author-date-with-ibid.csl
 
+# Details to be added to the title page
 degreetype: Doctor of Philosophy
 submitted: 2026
 school: School of Medicine
