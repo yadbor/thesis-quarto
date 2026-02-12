@@ -35,12 +35,23 @@ $endfor$
 \end{adjustwidth}
 
 \vspace{5ex}
-$if(school)$
-{\bfseries\large $school$ \par}
+% $if(school)$
+% {\bfseries\large $school$ \par}
+% $endif$
+% $if(discipline)$
+% {\bfseries\large $discipline$ \par}
+% $endif$
+
+$for(by-author)$
+$for(it.affiliations)$
+$if(it.department)$
+{\bfseries\large $it.department$ \par}
 $endif$
-$if(discipline)$
-{\bfseries\large $discipline$ \par}
+$if(it.group)$
+{\bfseries\large $it.group$ \par}
 $endif$
+$endfor$
+$endfor$
 
 \vspace{3ex}
 {\bfseries\Large $submitted$ \par}

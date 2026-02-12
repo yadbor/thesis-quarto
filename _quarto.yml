@@ -16,10 +16,12 @@ book:
     Thesis of a postgraduate research project being conducted at the University of Western Australia under the supervision of [Professor Kermit T. Frog](https://www.ed.ac.uk/profile/kermit) and [Dr. G. O'Nzo](https://www.ed.ac.uk/profile/gonzo). 
   author: 
     name: "Robert Edward Day"
+    # Use affiliations for the school etc for the title page. 
+    # Delete any unused entries and they will not appear.
     affiliations:
       - name: University of Western Australia
-        department: School of Medicine
-        group: Biomedical Engineering
+        department: School of Medicine # Use this for 'school'
+        group: Biomedical Engineering  # Use this for 'discipline'
     degrees:
     - BMechEng (SAIT)
     - MBiomedEng (UNSW)
@@ -55,11 +57,9 @@ bibliography: thesis.bib
 # csl: /path/to/your/style-file.csl
 csl: chicago-author-date-with-ibid.csl
 
-# Details to be added to the title page. Comment out any that you don't use.
+# Details to be added to the title page. Change the degree as needed.
 degreetype: Doctor of Philosophy
 submitted: 2026
-school: School of Medicine
-discipline: Biomedical Engineering
 
 format:
   html:
