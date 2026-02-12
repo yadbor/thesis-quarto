@@ -42,8 +42,8 @@ book:
     - 40-discussion.qmd
     - 50-conclusion.qmd
     - references.qmd
-  # appendices: 
-  # 
+    # appendices: 
+    # 
   sidebar:
     contents: auto
     style: docked
